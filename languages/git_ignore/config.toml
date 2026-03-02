@@ -1,0 +1,6 @@
+name = "Git Ignore"
+grammar = "gitignore"
+path_suffixes = [".gitignore", "gitignore"]
+file_types = [".gitignore", "gitignore"]
+line_comments = ["# "]
+language_servers = ["gitignore-lsp"]

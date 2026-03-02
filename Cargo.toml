@@ -1,0 +1,16 @@
+[package]
+name = "sort-git_ignore-extension"
+version = "0.0.1"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+path = "extension/src/lib.rs"
+
+[dependencies]
+zed_extension_api = "0.7.0"
+
+[workspace]
+members = ["git_ignore-lsp"]
+exclude = ["grammars/gitignore"]
+resolver = "2"

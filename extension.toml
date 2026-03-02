@@ -1,0 +1,20 @@
+id = "sort-git_ignore"
+name = "Sort .gitignore"
+version = "0.0.1"
+schema_version = 1
+authors = ["Adheesh Garg <adheeshgarg0611@gmail.com>"]
+description = "Sorts .gitignore patterns alphabetically within sections, via a built-in LSP"
+repository = "https://github.com/qwerty-dvorak/sort-gitignore"
+languages = ["languages/git_ignore"]
+
+[lib]
+kind = "Rust"
+version = "0.7.0"
+
+[grammars.gitignore]
+repository = "ssh://git@github.com/shunsambongi/tree-sitter-gitignore"
+rev = "f4685bf11ac466dd278449bcfe5fd014e94aa504"
+
+[language_servers.gitignore-lsp]
+name = "gitignore-lsp"
+languages = ["Git Ignore"]
