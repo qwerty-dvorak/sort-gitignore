@@ -1,0 +1,16 @@
+#!/bin/sh
+
+CARGO_VERSION=$(grep '^version' Cargo.toml | head -1 | sed 's/version = "\(.*\)"/\1/')
+EXTENSION_VERSION=$(grep '^version' extension.toml | head -1 | sed 's/version = "\(.*\)"/\1/')
+
+if [ "$CARGO_VERSION" != "$EXTENSION_VERSION" ]; then
+    echo "❌ Version mismatch:"
+    echo "   Cargo.toml:    $CARGO_VERSION"
+    echo "   extension.toml: $EXTENSION_VERSION"
+    echo ""
+    echo "Please ensure both files have the same version before committing."
+    exit 1
+fi
+
+echo "✅ Versions match ($CARGO_VERSION)"
+exit 0

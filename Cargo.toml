@@ -1,6 +1,6 @@
 [package]
 name = "sort-git_ignore-extension"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2021"
 
 [lib]
@@ -12,5 +12,4 @@ zed_extension_api = "0.7.0"
 
 [workspace]
 members = ["git_ignore-lsp"]
-exclude = ["grammars/gitignore"]
 resolver = "2"

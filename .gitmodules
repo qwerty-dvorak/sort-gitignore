@@ -1,3 +1,0 @@
-[submodule "grammars/gitignore"]
-	path = grammars/gitignore
-	url = https://github.com/shunsambongi/tree-sitter-gitignore.git

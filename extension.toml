@@ -1,6 +1,6 @@
 id = "sort-git_ignore"
 name = "Sort .gitignore"
-version = "0.0.1"
+version = "0.0.2"
 schema_version = 1
 authors = ["Adheesh Garg <adheeshgarg0611@gmail.com>"]
 description = "Sorts .gitignore patterns alphabetically within sections, via a built-in LSP"
